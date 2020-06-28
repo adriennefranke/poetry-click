@@ -11,7 +11,7 @@ def format_json_response(json_data):
 @click.command()
 @click.option('--name', help='name of the beer')
 def search_beers(name):
-    click.echo(click.style('searching brewerydb...🍻', fg='blue'))
+    click.echo(click.style('searching brewerydb...🍺', fg='blue'))
     brewerydb_url = 'https://sandbox-api.brewerydb.com/v2/search'
     payload = {'key': '89464b3cc474b22ea5dee881ca0b6360', 'type': 'beer', 'q': name}
     r = requests.get(brewerydb_url, params=payload)
