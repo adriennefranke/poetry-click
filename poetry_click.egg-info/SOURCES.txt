@@ -1,8 +1,0 @@
-README.rst
-setup.py
-poetry_click/__init__.py
-poetry_click.egg-info/PKG-INFO
-poetry_click.egg-info/SOURCES.txt
-poetry_click.egg-info/dependency_links.txt
-poetry_click.egg-info/requires.txt
-poetry_click.egg-info/top_level.txt
