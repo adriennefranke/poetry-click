@@ -11,6 +11,7 @@ click = "^7.1.2"
 pandas = "^1.0.5"
 Pygments = "^2.6.1"
 nox = "^2020.5.24"
+requests-mock = "^1.8.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

@@ -14,8 +14,7 @@ def search_beers(name):
     click.echo(click.style('searching brewerydb...🍺', fg='blue'))
     brewerydb_url = 'https://sandbox-api.brewerydb.com/v2/search'
     payload = {'key': '89464b3cc474b22ea5dee881ca0b6360', 'type': 'beer', 'q': name}
-    r = requests.get(brewerydb_url, params=payload)
-    json_data = r.json()
+    json_data = requests.get(brewerydb_url, params=payload).json()
     click.echo(format_json_response(json_data))
 
 if __name__ == '__main__':
